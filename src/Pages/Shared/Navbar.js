@@ -1,9 +1,22 @@
-import React from 'react';
+import React, { useState } from 'react';
 
 const Navbar = () => {
+
+    /* const [color, setColor] = useState(false)
+    const changeColor = () => {
+        if (window.scrollY >= 90) {
+            setColor(true)
+        } else {
+            setColor(false)
+        }
+    }
+    window.addEventListener('scroll', changeColor)
+    console.log(color) */
+
+
     const manuItems = <>
         <li><a>Home</a></li>
-        <li><a>About</a></li>
+        <li><a href='#about'>About</a></li>
         <li tabindex="0">
             <a> Skills </a>
         </li>
@@ -14,7 +27,7 @@ const Navbar = () => {
     </>
 
     return (
-        <div class="navbar bg-primary text-white lg:w-[80vw] mx-auto">
+        <div class={ "navbar bg-primary text-white lg:w-[80vw] mx-auto sticky top-0"}>
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">

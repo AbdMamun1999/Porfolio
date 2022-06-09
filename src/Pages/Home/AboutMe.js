@@ -1,9 +1,13 @@
 import React from 'react';
 import about from '../../Images/Hero/about.png'
+import { saveAs } from "file-saver";
 
 const AboutMe = () => {
+    const saveFile = () => {
+        saveAs("https://drive.google.com/drive/u/3/folders/1Tjk5LbLQgbsJi1R3GRtGJGgIu6xCWL4n")
+    }
     return (
-        <div class="bg-primary text-white">
+        <div class="bg-primary text-white" id='about'>
             <div class="flex flex-col-reverse lg:flex-row gap-20 w-[80%] mx-auto ">
                 <div className=' flex-1'>
                     <div className='mt-10 ml-5'>
@@ -11,7 +15,9 @@ const AboutMe = () => {
                         <p className='mt-3'>
                             I am a web developer. I am an expert in HTML, CSS, JavaScript, and React JS. I also have experience working with Node JS, Express JS, and MongoDB. I have the ability to work under pressure and adapt to different environments with fast learning capabilities. I would like to be a part of an organization where I could use and enhance my knowledge and talent for
                         </p>
-                        <button className='bg-green-600 rounded py-2 px-3 mt-3'>
+                        <button
+                            onClick={saveFile}
+                            className='bg-green-600 rounded py-2 px-3 mt-3'>
                             Download Resume
                         </button>
                     </div>
