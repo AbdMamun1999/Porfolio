@@ -10,6 +10,7 @@ const Navbar = () => {
         <li><a>Experience</a></li>
         <li><a>Projects</a></li>
         <li><a>Contact</a></li>
+        <li><a>RESUME</a></li>
     </>
 
     return (
@@ -30,9 +31,6 @@ const Navbar = () => {
                     {manuItems}
                 </ul>
             </div>
-            {/*  <div class="navbar-end">
-                <a class="btn">Get started</a>
-            </div> */}
         </div>
     );
 };
