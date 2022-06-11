@@ -1,0 +1,92 @@
+[
+    {
+        "id": 1,
+        "img": [
+            "https://i.ibb.co/M88bCq9/dantal-1-1.png",
+            "https://i.ibb.co/LxSGQdz/dantal-1-2.png",
+            "https://i.ibb.co/k5XCwwL/dantal-1-3.png"
+        ],
+        "details": [
+            "A user can sign up with Google, GitHub and email and password",
+            "A private protected route has been created for this project",
+            "Responsiveness for mobile and Desktop"
+        ],
+        "technologies": [
+            "JavaScript(ES6)",
+            "React JS",
+            "Bootstrap",
+            "firebase authentication",
+            "React-router"
+        ],
+        "time": "16 and 17 May 2022",
+        "client": "https://github.com/AbdMamun1999/independent-service-provider",
+        "server": "",
+        "project_live": "https://independent-service-prov-6cce2.firebaseapp.com/"
+    },
+    {
+        "id": 2,
+        "img": [
+            "https://i.ibb.co/N9QpQDf/manufacture-1.png",
+            "https://i.ibb.co/wyPKtgW/manufacture-2.png",
+            "https://i.ibb.co/YZXmkXk/manufacture-3.png",
+            "https://i.ibb.co/YLZGkFj/manufacture-4.png",
+            "https://i.ibb.co/DbPZgZM/manufacture-5.png"
+        ],
+        "details": [
+            "Implement login and signup method with Firebase authentication on the website",
+            "If a user is a login,They add product quantity",
+            "delete a product and add a new product",
+            "Create a 404 route. If users make a random route, they will go to the 404 page"
+        ],
+        "technologies": [
+            "JavaScript(ES6)",
+            "React JS",
+            "React-router",
+            "Bootstrap",
+            " Node JS",
+            "Express js",
+            "MongoDB",
+            "Heroku for server deployment and firebase for client side deployment"
+        ],
+        "time": "6,May 2022 - 8,May 2022",
+        "client": "https://github.com/AbdMamun1999/manufacture-website-client-site",
+        "server": "https://github.com/AbdMamun1999/manufacture-website-server-site",
+        "project_live": "https://manufacturer-project-auth.firebaseapp.com/"
+    },
+    {
+        "id": 3,
+        "img": [
+            "https://i.ibb.co/Jq3HVJR/warehouse-4.png",
+            "https://i.ibb.co/d5kPSCZ/warehouse-1.png",
+            "https://i.ibb.co/QNbcgY7/warehouse-2.png",
+            "https://i.ibb.co/SPVjpHN/warehouse-3.png",
+            "https://i.ibb.co/fng9mdW/warehouse-5.png",
+            "https://i.ibb.co/Lt63mgs/warehouse-6.png",
+            "https://i.ibb.co/Vj3Vf5B/warehouse-7.png"
+        ],
+        "details": [
+            "Users can sign up with Google or email and password.",
+            "Users can order a product and also can pay for this product.",
+            "The website has two types of functionalities for admin and users.",
+            "The admin can add a product and manage a product.The users can see their order page and review page.They will be able to review in the review route."
+        ],
+        "technologies": [
+            "JavaScript(ES6)",
+            "React JS",
+            "React-router",
+            "React-query",
+            "Tailwind",
+            " Daisy UI",
+            "Firebase Hooks for authentication",
+            "React Hooks Form",
+            "Node JS",
+            "Express js",
+            "MongoDB",
+            "Heroku for server deployment and firebase for client side deployment"
+        ],
+        "time": "22,May 2022 - 28, May 2022",
+        "client": "https://github.com/AbdMamun1999/warehouse-management-client-site",
+        "server": "https://github.com/AbdMamun1999/warehouse-management-server-site",
+        "project_live": "https://warehouse-management-authentic.web.app/"
+    }
+]

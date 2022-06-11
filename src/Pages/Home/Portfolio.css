@@ -1,0 +1,8 @@
+.button-div{
+    visibility: hidden;
+    transition: .2s;
+}
+
+.product-div:hover .button-div{
+    visibility: visible;
+}

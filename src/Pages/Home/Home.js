@@ -8,11 +8,11 @@ import Portfolio from './Portfolio';
 const Home = () => {
     return (
         <div >
-           <Banner></Banner>
-           <AboutMe></AboutMe>
-           <MySkills></MySkills>
-           <Portfolio></Portfolio>
-           <Contact></Contact>
+            <Banner></Banner>
+            <AboutMe></AboutMe>
+            <MySkills></MySkills>
+            <Portfolio></Portfolio>
+            <Contact></Contact>
         </div>
     );
 };

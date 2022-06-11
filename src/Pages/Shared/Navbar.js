@@ -22,7 +22,8 @@ const Navbar = () => {
         </li>
         <li><a>Experience</a></li>
         <li><a>Projects</a></li>
-        <li><a>Contact</a></li>
+        <li><a href='#constact'>Contact</a></li>
+        <li><a href="/blogs">Blogs</a></li>
         <li><a>RESUME</a></li>
     </>
 
