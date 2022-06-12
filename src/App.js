@@ -6,6 +6,7 @@ import { ToastContainer } from 'react-toastify';
 import 'react-toastify/dist/ReactToastify.css';
 import ProductDetails from './Pages/Home/ProductDetails';
 import Blogs from './Pages/Home/Blogs';
+import Footer from './Pages/Home/Footer';
 
 function App() {
   return (
@@ -16,6 +17,7 @@ function App() {
         <Route path='/product/:productId' element={<ProductDetails></ProductDetails>}></Route>
         <Route path='/blogs' element={<Blogs></Blogs>}></Route>
       </Routes>
+      <Footer></Footer>
       <ToastContainer />
     </div>
   );

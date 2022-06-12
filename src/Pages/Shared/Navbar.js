@@ -23,7 +23,7 @@ const Navbar = () => {
         </li>
         <li><a href='#experience'>Experience</a></li>
         <li><a href='#projects'>Projects</a></li>
-        <li><a href='#constact'>Contact</a></li>
+        <li><a href='#contact'>Contact</a></li>
         <li><Link to="/blogs">Blogs</Link></li>
         <li>
             <a
@@ -35,8 +35,9 @@ const Navbar = () => {
         </li>
     </>
 
+// lg:w-[80%] mx-auto
     return (
-        <div class={ "navbar bg-primary text-white lg:w-[80%] mx-auto sticky top-0"}>
+        <div class={color? "navbar bg-green-600 text-white lg:px-36 shadow-xl sticky top-0 z-10 ease-in-out duration-1000":"navbar bg-primary text-white lg:px-36  sticky top-0 z-10 ease-in-out duration-1000"}>
             <div class="navbar-start">
                 <div class="dropdown">
                     <label tabindex="0" class="btn btn-ghost lg:hidden">
@@ -49,7 +50,7 @@ const Navbar = () => {
                 <a class="btn btn-ghost normal-case text-xl">Mamun</a>
             </div>
             <div class="navbar-end hidden lg:flex">
-                <ul class="menu menu-horizontal p-0 bg-primary">
+                <ul class="menu menu-horizontal p-0 bg-transparent">
                     {manuItems}
                 </ul>
             </div>

@@ -8,7 +8,7 @@ const Banner = () => {
     return (
         <div class="hero min-h-screen bg-primary  text-white">
             <div class="flex flex-col-reverse lg:flex-row-reverse items-center lg:gap-20 w-[90%] lg:w-[60%]">
-                <div class=" flex-1 mt-10">
+                <div class=" flex-1 mt-10" data-aos="fade-up" data-aos-duration="1000">
                     <p className='mb-2'>Hello there!</p>
                     <h1 class="text-4xl font-bold">I'm Abdullah Al Mamun</h1>
                     <h4 className='mt-2 font-bold'>Web Developer</h4>
@@ -43,7 +43,7 @@ const Banner = () => {
                     </div>
                 </div>
                 <div class="flex-1 w-full max-w-sm  bg-base-100" data-aos="fade-up"
-                    data-aos-duration="3000">
+                    data-aos-duration="1000">
                     <img src={img} alt="Shoes" className='bg-primary' />
                 </div>
             </div>

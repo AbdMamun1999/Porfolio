@@ -9,7 +9,7 @@ const Portfolio = () => {
         .then(data => setProducts(data))
     },[])
     return (
-        <div className='w-[90%] mx-auto' id='projects'>
+        <div className='w-[90%] lg:w-[80%] mx-auto' id='projects'>
             <h1 className='text-center text-white my-10 text-5xl font-bold'>Recent Works</h1>
             <div className='grid grid-cols-1 lg:grid-cols-3 justify-items-center gap-x-3 gap-y-5'>
                 {

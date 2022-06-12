@@ -1,5 +1,6 @@
 import React from 'react';
-import { CircularProgressbar, buildStyles } from 'react-circular-progressbar';
+import { CircularProgressbar } from 'react-circular-progressbar';
+import VisibilitySensor from "react-visibility-sensor";
 import 'react-circular-progressbar/dist/styles.css';
 
 const MySkills = () => {
@@ -8,39 +9,125 @@ const MySkills = () => {
         <div className='mb-20 mt-20 w-[90%] mx-auto' id='skills'>
             <h1 className='text-5xl text-center font-bold text-white my-10'>My Skill</h1>
             <div className='  grid grid-cols-2 lg:grid-cols-4 justify-items-center gap-10 text-white'>
-                <div className='text-center'>
-                    <div class="radial-progress" style={{ "--value": 80 }}>80%</div>
-                    <h5 className='text-4xl font-bold mt-5'>HTML</h5>
+
+                <div className='text-center' style={{ width: "100px" }} data-aos="fade-up" data-aos-duration="1000">
+                    <p className='my-5'>HTML</p>
+                    <VisibilitySensor>
+                        {({ isVisible }) => {
+                            const percentage = isVisible ? 90 : 0;
+                            return (
+                                <CircularProgressbar
+                                    value={percentage}
+                                    text={`${percentage}%`}
+                                />
+                            );
+                        }}
+                    </VisibilitySensor>
                 </div>
-                <div className='text-center'>
-                    <div class="radial-progress" style={{ "--value": 80 }}>80%</div>
-                    <h5 className='text-4xl font-bold mt-5'>CSS</h5>
+
+                <div className='text-center' style={{ width: "100px" }} data-aos="fade-up" data-aos-duration="1000">
+                    <p className='my-5'>CSS</p>
+                    <VisibilitySensor>
+                        {({ isVisible }) => {
+                            const percentage = isVisible ? 85 : 0;
+                            return (
+                                <CircularProgressbar
+                                    value={percentage}
+                                    text={`${percentage}%`}
+                                />
+                            );
+                        }}
+                    </VisibilitySensor>
                 </div>
-                <div className='text-center'>
-                    <div class="radial-progress" style={{ "--value": 80 }}>80%</div>
-                    <h5 className='text-4xl font-bold mt-5'>Bootstrap</h5>
+
+                <div className='text-center' style={{ width: "100px" }} data-aos="fade-up" data-aos-duration="1000">
+                    <p className='my-5'>JavaScript</p>
+                    <VisibilitySensor>
+                        {({ isVisible }) => {
+                            const percentage = isVisible ? 70 : 0;
+                            return (
+                                <CircularProgressbar
+                                    value={percentage}
+                                    text={`${percentage}%`}
+                                />
+                            );
+                        }}
+                    </VisibilitySensor>
                 </div>
-                <div className='text-center'>
-                    <div class="radial-progress" style={{ "--value": 80 }}>80%</div>
-                    <h5 className='text-4xl font-bold mt-5'>Tailwind</h5>
+
+                <div className='text-center' style={{ width: "100px" }} data-aos="fade-up" data-aos-duration="1000">
+                    <p className='my-5'>Boostrap</p>
+                    <VisibilitySensor>
+                        {({ isVisible }) => {
+                            const percentage = isVisible ? 80 : 0;
+                            return (
+                                <CircularProgressbar
+                                    value={percentage}
+                                    text={`${percentage}%`}
+                                />
+                            );
+                        }}
+                    </VisibilitySensor>
                 </div>
-                <div className='text-center'>
-                    <div class="radial-progress" style={{ "--value": 80 }}>80%</div>
-                    <h5 className='text-4xl font-bold mt-5'>JavaScript</h5>
+
+                <div className='text-center' style={{ width: "100px" }} data-aos="fade-up" data-aos-duration="1000">
+                    <p className='my-5'>Tailwind</p>
+                    <VisibilitySensor>
+                        {({ isVisible }) => {
+                            const percentage = isVisible ? 80 : 0;
+                            return (
+                                <CircularProgressbar
+                                    value={percentage}
+                                    text={`${percentage}%`}
+                                />
+                            );
+                        }}
+                    </VisibilitySensor>
                 </div>
-                <div className='text-center'>
-                    <div class="radial-progress" style={{ "--value": 80 }}>80%</div>
-                    <h5 className='text-4xl font-bold mt-5'>React JS</h5>
+
+                <div className='text-center' style={{ width: "100px" }} data-aos="fade-up" data-aos-duration="1000">
+                    <p className='my-5'>Node</p>
+                    <VisibilitySensor>
+                        {({ isVisible }) => {
+                            const percentage = isVisible ? 50 : 0;
+                            return (
+                                <CircularProgressbar
+                                    value={percentage}
+                                    text={`${percentage}%`}
+                                />
+                            );
+                        }}
+                    </VisibilitySensor>
                 </div>
-                <div className='text-center'>
-                    <div class="radial-progress" style={{ "--value": 80 }}>80%</div>
-                    <h5 className='text-4xl font-bold mt-5'>
-                        Node JS
-                    </h5>
+
+                <div className='text-center' style={{ width: "100px" }} data-aos="fade-up" data-aos-duration="1000">
+                    <p className='my-5'>Express JS</p>
+                    <VisibilitySensor>
+                        {({ isVisible }) => {
+                            const percentage = isVisible ? 50 : 0;
+                            return (
+                                <CircularProgressbar
+                                    value={percentage}
+                                    text={`${percentage}%`}
+                                />
+                            );
+                        }}
+                    </VisibilitySensor>
                 </div>
-                <div className='text-center'>
-                    <div class="radial-progress" style={{ "--value": 80 }}>80%</div>
-                    <h5 className='text-4xl font-bold mt-5'>MongoDB</h5>
+
+                <div className='text-center text-white' style={{ width: "100px" }} data-aos="fade-up" data-aos-duration="1000">
+                    <p className='my-5'>MongoDB</p>
+                    <VisibilitySensor>
+                        {({ isVisible }) => {
+                            const percentage = isVisible ? 55 : 0;
+                            return (
+                                <CircularProgressbar
+                                    value={percentage}
+                                    text={`${percentage}%`}
+                                />
+                            );
+                        }}
+                    </VisibilitySensor>
                 </div>
 
             </div>

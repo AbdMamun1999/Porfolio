@@ -1,6 +1,6 @@
 .button-div{
     visibility: hidden;
-    transition: .2s;
+    transition: 0.3s ease;
 }
 
 .product-div:hover .button-div{

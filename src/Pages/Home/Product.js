@@ -9,8 +9,7 @@ const Product = ({ product }) => {
         navigate(`/product/${id}`)
     }
     return (
-        <div class="bg-base-100 shadow-xl main relative product-div" data-aos="fade-up"
-        data-aos-duration="3000">
+        <div class="bg-base-100  main relative product-div" data-aos="fade-up" data-aos-duration="3000">
             <figure><img src={img[0]} alt="" /></figure>
             <div className='absolute top-0 w-full h-full flex justify-center items-center button-div'>
                 <button

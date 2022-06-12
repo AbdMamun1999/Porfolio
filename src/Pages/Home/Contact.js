@@ -25,7 +25,7 @@ const Contact = data => {
         reset();
     }
     return (
-        <div className='w-[90%] lg:w-[55%] mx-auto lg:mt-20' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+        <div className='w-[90%] lg:w-[55%] mx-auto lg:mt-20 mb-10' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="1000" id='contact'>
             <h2 className='text-5xl mb-5 mt-10 lg:mt-0 text-center text-white font-bold '>Get In Touch </h2>
             <div className='mx-auto'>
                 <form onSubmit={handleSubmit(onSubmit)} className=''>

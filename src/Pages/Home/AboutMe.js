@@ -4,12 +4,14 @@ import { saveAs } from "file-saver";
 
 
 
-// bg-primary text-white mt-10 w-[90%] border-2 mx-auto
+
 const AboutMe = () => {
     return (
-        <div class="card lg:card-side bg-primary  mt-10 lg:flex-row-reverse w-[90%] lg:w-[65%] mx-auto">
-            <figure><img src={about} alt="Album" className='w-[300px] lg:w-[400px]' /></figure>
-            <div class="card-body text-white p-2 lg:p-8">
+        <div class="card lg:card-side bg-primary mt-10 lg:flex-row-reverse w-[90%] lg:w-[65%] mx-auto z-0" id='about'>
+            <figure data-aos="fade-left" data-aos-duration="1000">
+                <img src={about} alt="Album" className='w-[300px] lg:w-[400px]' />
+            </figure>
+            <div class="card-body text-white p-2 lg:p-8" data-aos="fade-up" data-aos-duration="1000">
                 <h1 className='text-5xl font-bold'>About Me</h1>
                 <p className='mt-3'>
                     I am a web developer. I am an expert in HTML, CSS, JavaScript, and React JS. I also have experience working with Node JS, Express JS, and MongoDB. I have the ability to work under pressure and adapt to different environments with fast learning capabilities. I would like to be a part of an organization where I could use and enhance my knowledge and talent for
