@@ -1,7 +1,7 @@
 import React from 'react';
 import { useForm } from 'react-hook-form';
 import emailjs from '@emailjs/browser'
-import {  toast } from 'react-toastify';
+import { toast } from 'react-toastify';
 
 
 const Contact = data => {
@@ -12,12 +12,12 @@ const Contact = data => {
             .then(
                 (result) => {
                     console.log(result);
-                    if(result?.status === 200){
+                    if (result?.status === 200) {
                         toast.success('Your message is sent')
                     }
                 },
                 (error) => {
-                    if(error?.status !== 200){
+                    if (error?.status !== 200) {
                         toast.error(error?.text)
                     }
                 }
@@ -25,16 +25,16 @@ const Contact = data => {
         reset();
     }
     return (
-        <div className='w-4/6 mx-auto my-10'>
-            <h2 className='text-3xl mb-5 mt-5 lg:mt-0 text-center text-white font-bold '>Get In Touch </h2>
+        <div className='w-[90%] lg:w-[55%] mx-auto lg:mt-20' data-aos="flip-left" data-aos-easing="ease-out-cubic" data-aos-duration="2000">
+            <h2 className='text-5xl mb-5 mt-10 lg:mt-0 text-center text-white font-bold '>Get In Touch </h2>
             <div className='mx-auto'>
-                <form onSubmit={handleSubmit(onSubmit)} className='grid grid-cols-1 justify-items-center text-white'>
-                    <div className='flex flex-col lg:flex-row gap-10'>
-                        <div className="form-control  w-96 ">
+                <form onSubmit={handleSubmit(onSubmit)} className=''>
+                    <div className='grid grid-cols-1 md:grid-cols-2 lg:grid-cols-2 gap-y-1 md:gap-x-5'>
+                        <div>
                             <input
                                 type="text"
                                 placeholder="Your Name"
-                                className="input input-bordered w-100% bg-[#2d343e]"
+                                className='block w-full p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
                                 {...register("name", {
                                     required: {
                                         value: true,
@@ -46,11 +46,11 @@ const Contact = data => {
 
                             </label>
                         </div>
-                        <div className="form-control w-96 ">
+                        <div>
                             <input
                                 type="email"
                                 placeholder="email"
-                                className="input input-bordered w-100% bg-[#2d343e]"
+                                className='block w-full  p-4 text-gray-900 border border-gray-300 rounded-lg bg-gray-50 sm:text-md focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
                                 {...register("email", {
                                     required: {
                                         value: true,
@@ -67,9 +67,10 @@ const Contact = data => {
                             </label>
                         </div>
                     </div>
-                    <div className="form-control mx-auto w-full">
-                        <textarea className="textarea textarea-bordered w-[80%] h-[250px] mx-auto bg-[#2d343e]"
+                    <div>
+                        <textarea
                             placeholder="Your message"
+                            className='block p-2.5 w-full h-[120px] text-sm text-gray-900 bg-gray-50 rounded-lg border border-gray-300 focus:ring-blue-500 focus:border-blue-500 dark:bg-gray-700 dark:border-gray-600 dark:placeholder-gray-400 dark:text-white dark:focus:ring-blue-500 dark:focus:border-blue-500'
                             {...register("comments", {
                                 required: {
                                     value: true,

@@ -1,6 +1,5 @@
 [
     {
-        "id": 1,
         "img": [
             "https://i.ibb.co/M88bCq9/dantal-1-1.png",
             "https://i.ibb.co/LxSGQdz/dantal-1-2.png",
@@ -24,7 +23,6 @@
         "project_live": "https://independent-service-prov-6cce2.firebaseapp.com/"
     },
     {
-        "id": 2,
         "img": [
             "https://i.ibb.co/N9QpQDf/manufacture-1.png",
             "https://i.ibb.co/wyPKtgW/manufacture-2.png",
@@ -54,7 +52,6 @@
         "project_live": "https://manufacturer-project-auth.firebaseapp.com/"
     },
     {
-        "id": 3,
         "img": [
             "https://i.ibb.co/Jq3HVJR/warehouse-4.png",
             "https://i.ibb.co/d5kPSCZ/warehouse-1.png",
